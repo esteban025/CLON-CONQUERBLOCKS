@@ -55,10 +55,7 @@ body {
   font-size: var(--size-body-normal);
   line-height: var(--line-height-body);
   letter-spacing: var(--letter-spacing-body);
-
-  & img {
-    width: 100%;
-  }
+  background-color: #f4f4f4;
 }
 
 a {

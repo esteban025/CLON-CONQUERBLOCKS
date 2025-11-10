@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
 <body>
@@ -108,41 +109,96 @@
     <section class="section-blogs">
       <h2>Nuestas Noticias</h2>
 
-      <!-- PRIMERA NOTICIA -->
-      <article>
-        <picture>
-          <source srcset="../../images/blogs/diagrama-flujo.webp" type="image/webp">
-          <source srcset="../../images/blogs/diagrama-flujo.jpg" type="image/jpg">
-          <img src="../../images/blogs/diagrama-flujo.webp" alt="Poster de blog de diagramas de flujo">
-        </picture>
-        <div class="info">
-          <h3>¿Qué es un Diagrama de Flujo y Por Qué es tan Útil?</h3>
-          <p>Un *diagrama de flujo* es una representación visual de un proceso mediante símbolos y flechas que indican el flujo y el orden de ejecución</p>
-          <a href="./blogs/blog-1.html">Leer más</a>
-        </div>
-      </article>
+        <p class="description">Cada semana publicamos nuevas noticias y artículos sobre innovación, tecnología y programación.Descubre las últimas tendencias, herramientas y consejos que te ayudarán a mantenerte al día en el mundo del desarrollo.</p>
 
-      <!-- SEGUNDA NOTICIA -->
-      <article>
-        <picture>
-          <source srcset="../../images/blogs/importancia-algoritmo.webp" type="image/webp">
-          <source srcset="../../images/blogs/importancia-algoritmo.webp" type="image/jpg">
-          <img src="../../images/blogs/importancia-algoritmo.webp" alt="Poster de blog de importancia del algoritmo">
-        </picture>
-        <div class="info">
-          <h3>¿Qué es un Algoritmo y Por Qué es tan Importante?</h3>
-          <p>Un *algoritmo* es un conjunto de instrucciones ordenadas y definidas para resolver un problema o realizar una tarea.</p>
-          <a href="./blogs/blog-2.html">Leer más</a>
-        </div>
-      </article>
-      <br>
-      <a href="./blogs/index.html">Todos nuestro blogs y noticias</a>
+      <div class="content-blogs">
+
+        <!-- PRIMERA NOTICIA -->
+        <article>
+          <picture>
+            <source srcset="../../images/blogs/diagrama-flujo.webp" type="image/webp">
+            <source srcset="../../images/blogs/diagrama-flujo.jpg" type="image/jpg">
+            <img src="../../images/blogs/diagrama-flujo.webp" alt="Poster de blog de diagramas de flujo">
+          </picture>
+          <div class="info">
+            <h3>¿Qué es un Diagrama de Flujo y Por Qué es tan Útil?</h3>
+            <p>Un *diagrama de flujo* es una representación visual de un proceso mediante símbolos y flechas que indican el flujo y el orden de ejecución</p>
+            <a class="btn btn-secondary" href="./blogs/blog-1.html">Leer más</a>
+          </div>
+        </article>
+
+        <!-- SEGUNDA NOTICIA -->
+        <article>
+          <picture>
+            <source srcset="../../images/blogs/importancia-algoritmo.webp" type="image/webp">
+            <source srcset="../../images/blogs/importancia-algoritmo.webp" type="image/jpg">
+            <img src="../../images/blogs/importancia-algoritmo.webp" alt="Poster de blog de importancia del algoritmo">
+          </picture>
+          <div class="info">
+            <h3>¿Qué es un Algoritmo y Por Qué es tan Importante?</h3>
+            <p>Un *algoritmo* es un conjunto de instrucciones ordenadas y definidas para resolver un problema o realizar una tarea.</p>
+            <a class="btn btn-secondary" href="./blogs/blog-2.html">Leer más</a>
+          </div>
+        </article>
+      </div>
+      <a class="btn btn-primary" href="./blogs/index.html">Todos nuestro blogs y noticias</a>
     </section>
   </main>
 
   <footer>
-    <p>Copyright © 2025  By ConquerX </p>
-    <a href="#">Aviso legal</a>
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="../../icons/logotipo-conquerbloks.svg" alt="Logo de conquerblocks">
+          </div>
+
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+
+          <div class="copyright">
+            Copyright © 2025 <a href="#">By ConquerX</a>
+          </div>
+        </div>
+
+        <!-- Cursos Column -->
+        <div class="footer-column">
+          <h3>Cursos</h3>
+          <ul>
+            <li><a href="#">Desarrollo Web Frontend</a></li>
+            <li><a href="#">Backend con Node.js</a></li>
+            <li><a href="#">React Avanzado</a></li>
+          </ul>
+        </div>
+
+        <!-- Blog Column -->
+        <div class="footer-column">
+          <h3>Blog</h3>
+          <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Desarrollo web Full Stack</a></li>
+          <li><a href="#">Inteligencia artificial</a></li>
+          <li><a href="#">Desarrollo Blockchain</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Column -->
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Política de cookies</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
