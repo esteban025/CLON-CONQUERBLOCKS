@@ -42,31 +42,40 @@
 
 /* buttons */
 .btn {
-  padding: .75rem 1.5rem;
+  padding: 14px 32px;
   border-radius: 999px;
-  transition: all 200ms linear;
+  transition: all 200ms ease;
   display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+
 }
 /* primary */
 .btn-primary {
-  background: var(--color-gradient-primary);
-  text-shadow: 0 1px 4px #000;
-  color: white;
+  background: var(--color-primary);
+  color: #1a1a1a;
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 4px 15px rgba(78, 225, 160, 0.3);
 
   &:hover {
-    transform: scale(1.05);
+    background: #2ec282;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(78, 225, 160, 0.5);
   }
 }
 
 .btn-secondary {
-  background-color: #ffffff10;
-  box-shadow: 0 10px 10px #00000010;
-  border: 2px solid #ffffff20;
-  
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+
   &:hover {
-    box-shadow: 0 10px 10px #00000030;
-    transform: scale(.95);
-    border-color: #ffffff50;
+    background: var(--color-primary);
+    color: #1a1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(78, 225, 160, 0.3);
   }
 }
 
@@ -126,7 +135,12 @@
       width: 100%;
       stroke: white;
       display: block;
+      transition: stroke 200ms ease-in-out;
       animation: slide-down 500ms linear infinite alternate;
+    }
+
+    &:hover svg {
+      stroke: var(--color-primary);
     }
   }
 }
@@ -173,12 +187,8 @@
     text-shadow: 0 0 10px #00000080;
 
     & span {
-      color: var(--color-blue);
+      color: var(--color-primary);
     }
-  }
-
-  & p {
-    color: var(--color-gray-200);
   }
 }
 
