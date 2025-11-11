@@ -1,0 +1,40 @@
+:root {
+
+  /* === COLORS === */
+  --color-bg: #1a1a1a;
+  --color-primary: #4EE1A0;
+  --color-gray-500: #999;
+  --color-gray-400: #666;
+  --color-gray-border: #333;
+  --color-gray-200: #e5e5e5;
+  --color-bg-card: #242424;
+  --color-bg-card-before: linear-gradient(135deg, rgba(78, 225, 160, 0.1), transparent);
+  
+  --color-gradient-primary: linear-gradient(to bottom right, var(--color-green), var(--color-blue));
+
+
+  /* === FONTS === */
+  --font-poppins: "Poppins", sans-serif;
+  --font-kanit: "Kanit", sans-serif;
+
+  /* H1 — Main Title */
+  --size-title-h1: clamp(32px, calc(3vw + 15px), 60px);
+  --font-xl: 500 var(--size-title-h1) var(--font-kanit);
+
+  /* H2 — Section Title */
+  --size-title-h2: clamp(32px, calc(2.2vw + 24px), 50px);
+  --font-lg: 500 var(--size-title-h2) var(--font-kanit);
+
+  /* H3 — Subsection Title */
+  --size-title-h3: clamp(28px, calc(1.6vw + 22px), 38px);
+  --font-md: 500 var(--size-title-h3) var(--font-kanit);
+
+  /* H4 — Minor Subtitle / Label */
+  --size-title-h4: clamp(24px, calc(1.2vw + 20px), 32px);
+  --font-sm: 500 var(--size-title-h4) var(--font-kanit);
+
+  /* body */
+  --size-body-normal: clamp(14px, calc(0.6vw + 14px), 18px);
+  --line-height-body: 1.6;
+  --letter-spacing-body: .3px;
+}

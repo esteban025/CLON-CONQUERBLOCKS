@@ -1,0 +1,42 @@
+/* === BUTTONS === */
+
+/* general */
+.btn {
+  padding: 14px 32px;
+  border-radius: 999px;
+  transition: all 200ms ease;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+
+}
+/* primary */
+.btn-primary {
+  background: var(--color-primary);
+  color: #1a1a1a;
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 4px 15px rgba(78, 225, 160, 0.3);
+
+  &:hover {
+    background: #2ec282;
+    border-color: #2ec282;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(78, 225, 160, 0.5);
+  }
+}
+
+/* buttons secondary */
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+
+  &:hover {
+    background: var(--color-primary);
+    color: #1a1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(78, 225, 160, 0.3);
+  }
+}

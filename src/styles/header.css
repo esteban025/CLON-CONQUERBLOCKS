@@ -1,0 +1,55 @@
+/* === HEADER === */
+.header-principal-page {
+  background-color: transparent;
+  color: white;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
+
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  animation: header-scroll 300ms linear both;
+  animation-timeline:scroll(root) ;
+  animation-range: 0 200px;
+
+  & > button:first-child {
+    background-color: transparent;
+    width: 100%;
+    max-width: 32px;
+
+      & svg {
+        width: 100%;
+        transform: scaleX(-1);
+        stroke: white;
+      }
+  }
+
+  & > nav {
+    display: none;
+  }
+}
+
+/* === ANIMATIONS === */
+@keyframes header-scroll {
+  100% {
+    background-color: #24242480;
+    backdrop-filter: blur(10px);
+    transform: scale(.9);
+    border-radius: 999px;
+    border: 1px solid rgba(78, 225, 160, 0.2);
+    padding:1rem;
+    top: .5rem;
+
+  }
+}
