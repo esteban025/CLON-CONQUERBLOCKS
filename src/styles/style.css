@@ -6,8 +6,13 @@
   --color-primary: #4EE1A0;
   --color-green: #F6FF55;
   --color-blue: #6DBAFF;
-  --color-gray-500: #737373;
+  --color-gray-500: #999;
+  --color-gray-400: #666;
+  --color-gray-border: #333;
   --color-gray-200: #e5e5e5;
+  --color-bg-card: #242424;
+  --color-bg-card-before: linear-gradient(135deg, rgba(78, 225, 160, 0.1), transparent);
+
   /* --color-blue: #070F2B; */
   --color-gradient-primary: linear-gradient(to bottom right, var(--color-green), var(--color-blue));
   
@@ -55,7 +60,8 @@ body {
   font-size: var(--size-body-normal);
   line-height: var(--line-height-body);
   letter-spacing: var(--letter-spacing-body);
-  background-color: #f4f4f4;
+  background-color: #1a1a1a;
+  color: white;
 }
 
 a {

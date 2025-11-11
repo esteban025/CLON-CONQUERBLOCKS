@@ -54,17 +54,48 @@
           <img src="../../icons/logotipo-conquerbloks.svg" alt="Icon - logo conquer blocks">
         </figure> -->
       </div>
-      <a class="down-section" href="#who-we-are">
+      <a class="down-section" href="#about-section">
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 11l8 3l8 -3" /></svg>
       </a>
     </section>
 
     <!-- QUIENES SOMOS -->
-    <section id="who-we-are" class="who-we-are">
-      <div class="dd">
-        <h2>¿Quiénes somos?</h2>
-        <p>Conquer Blocks es la mayor academia de programación en habla hispana, y la que cuenta con mayores garantías de empleo. Aquí podrás aprender sobre Desarrollo Full-Stack, Desarrollo Blockchain, Inteligencia Artificial y Ciberseguridad.</p>
-        <a class="btn btn-secondary" href="./who-we-are.html">Más información</a>
+    <section id="about-section" class="about-section">
+      <div class="container">
+        <!-- Header -->
+        <section class="section-header">
+          <h2 class="section-title">¿Quiénes <span>somos?</span></h2>
+          <p class="section-description">
+              Conquer Blocks es la mayor academia de programación en habla hispana, y la que cuenta con mayores garantías de empleo.
+          </p>
+        </section>
+
+        <!-- Content Grid -->
+        <section class="content-grid">
+          <h3>Nuestros números nos respaldan</h3>
+
+          <!-- Stats -->
+          <section class="stats-grid">
+            <article class="stat-card">
+                <span class="stat-number">6,000+</span>
+                <span class="stat-label">Estudiantes</span>
+            </article>
+            <article class="stat-card">
+                <span class="stat-number">95%</span>
+                <span class="stat-label">Tasa de Empleo</span>
+            </article>
+            <article class="stat-card">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Paises</span>
+            </article>
+            <article class="stat-card">
+                <span class="stat-number">100k+</span>
+                <span class="stat-label">Seguidores en RS</span>
+            </article>
+          </section>
+        </section>
+
+        <a class="btn btn-primary" href="./who-we-are.html">Conócenos mejor</a>
       </div>
     </section>
 
@@ -78,26 +109,36 @@
 
       <div class="content-courses">
         <!-- CURSO DESARROLLADOR FULLSTACK -->
-        <article>
-          <figure>
-            <img src="../../images/courses/master-fullstack.webp" alt="Imagen del curso de master-fullstack">
-          </figure>
-          <div class="info">
-            <h3>Máster en Desarrollo Web Full-stack</h3>
-            <p>El más vendido. Consigue la profesión de tus sueños aprendiendo a programar desde 0.</p>
-            <a class="btn btn-secondary" href="./courses/course-1.html">Más información</a>
+        <article class="course-card">
+          <img src="../../images/courses/master-fullstack.webp" alt="Desarrollo fullstack" class="card-image">
+          <div class="card-content">
+              <span class="card-category">Frontend</span>
+              <h3 class="card-title">Máster en Desarrollo Web Full-Stack</h3>
+              <p class="card-description"><strong>El más vendido.</strong> Consigue la profesión de tus sueños aprendiendo a programar desde 0.</p>
+              <footer class="card-footer">
+                  <div class="card-meta">
+                      <span>⏱ 12 semanas</span>
+                      <span>📚 45 módulos</span>
+                  </div>
+                  <a href="#" class="card-cta">Ver más</a>
+              </footer>
           </div>
         </article>
 
         <!-- CURSO DESARROLLADOR BLOCKCHAIN -->
-        <article>
-          <figure>
-            <img src="../../images/courses/master-blockchain.webp" alt="Imagen del curso de blockchain">
-          </figure>
-          <div class="info">
-            <h3>Máster en Desarrollo Blockchain</h3>
-            <p>Ideal para programadores que quieran crecer profesionalmente aprendiendo una especialización</p>
-            <a class="btn btn-secondary" href="./courses/course-2.html">Más información</a>
+        <article class="course-card">
+          <img src="../../images/courses/master-blockchain.webp" alt="Blockchain" class="card-image">
+          <div class="card-content">
+              <span class="card-category">Blockchain</span>
+              <h3 class="card-title">Máster en Desarrollo Blockchain</h3>
+              <p class="card-description">Ideal para programadores que quieran crecer profesionalmente aprendiendo una especialización</p>
+              <footer class="card-footer">
+                  <div class="card-meta">
+                      <span>⏱ 10 semanas</span>
+                      <span>📚 38 módulos</span>
+                  </div>
+                  <a href="#" class="card-cta">Ver más</a>
+              </footer>
           </div>
         </article>
       </div>
@@ -114,38 +155,39 @@
       <div class="content-blogs">
 
         <!-- PRIMERA NOTICIA -->
-        <article>
+        <article class="news-card">
           <picture>
             <source srcset="../../images/blogs/diagrama-flujo.webp" type="image/webp">
             <source srcset="../../images/blogs/diagrama-flujo.jpg" type="image/jpg">
             <img src="../../images/blogs/diagrama-flujo.webp" alt="Poster de blog de diagramas de flujo">
           </picture>
-          <div class="info">
-            <h3>¿Qué es un Diagrama de Flujo y Por Qué es tan Útil?</h3>
-            <p>Un *diagrama de flujo* es una representación visual de un proceso mediante símbolos y flechas que indican el flujo y el orden de ejecución</p>
-            <a class="btn btn-secondary" href="./blogs/blog-1.html">Leer más</a>
+          <div class="news-card-content">
+            <date class="news-date">8 NOV 2025</date>
+            <h3 class="news-title">¿Qué es un Diagrama de Flujo y Por Qué es tan Útil?</h3>
+            <p class="news-note">Un *diagrama de flujo* es una representación visual de un proceso mediante símbolos y flechas que indican el flujo y el orden de ejecución.</p>
           </div>
         </article>
 
         <!-- SEGUNDA NOTICIA -->
-        <article>
+        <article class="news-card">
           <picture>
             <source srcset="../../images/blogs/importancia-algoritmo.webp" type="image/webp">
             <source srcset="../../images/blogs/importancia-algoritmo.webp" type="image/jpg">
             <img src="../../images/blogs/importancia-algoritmo.webp" alt="Poster de blog de importancia del algoritmo">
           </picture>
-          <div class="info">
-            <h3>¿Qué es un Algoritmo y Por Qué es tan Importante?</h3>
-            <p>Un *algoritmo* es un conjunto de instrucciones ordenadas y definidas para resolver un problema o realizar una tarea.</p>
-            <a class="btn btn-secondary" href="./blogs/blog-2.html">Leer más</a>
+          <div class="news-card-content">
+            <date class="news-date">15 NOV 2025</date>
+            <h3 class="news-title">¿Qué es un Algoritmo y Por Qué es tan Importante?</h3>
+            <p class="news-note">Un <strong>algoritmo</strong> es un conjunto de instrucciones ordenadas y definidas para resolver un problema o realizar una tarea.</p>
+            <!-- <a class="btn btn-secondary" href="./blogs/blog-2.html">Leer más</a> -->
           </div>
         </article>
       </div>
-      <a class="btn btn-primary" href="./blogs/index.html">Todos nuestro blogs y noticias</a>
+      <a class="btn btn-primary" href="./blogs/index.html">Todos nuestros blogs</a>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer-page">
     <div class="footer-container">
       <div class="footer-content">
         <!-- Brand Section -->
