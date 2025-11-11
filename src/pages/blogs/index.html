@@ -6,37 +6,48 @@
   <link rel="shortcut icon" href="../../../icons/favicon.svg" type="image/x-icon">
   <title>Blogs conquerbloks - Proyecto HTML | EstebanDev</title>
   <meta name="description" content="Todos los blogs escritos por nuestros mejores profesionales.">
+  
+   <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/principal-page/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../../styles/blogs-page/index.css">
 </head>
 <body>
-  <header>
-    <picture>
-      <source srcset="../../../images/logotipo-conquerbloks.webp" type="image/webp">
-      <source srcset="../../../images/logotipo-conquerbloks.avif" type="image/avif">
-      <img src="../../../images/logotipo-conquerbloks.webp" alt="Logotipo de la academia ConquerBloks">
-    </picture>
-
+  <header class="header-principal-page">
+    <button class="btn-open-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-list-tree"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6h11" /><path d="M12 12h8" /><path d="M15 18h5" /><path d="M5 6v.01" /><path d="M8 12v.01" /><path d="M11 18v.01" /></svg>
+    </button>
     <nav>
       <ul>
-        <a href="../../pages/index.html">Home</a>
-        <a href="../../pages/who-we-are.html">Quiénes somos</a>
-        <a href="../../pages/courses/index.html">Cursos</a>
-        <a href="#">Blogs</a>
-        <a href="../../pages/register.html">Registro</a>
-        <a href="../../pages/login.html">Login</a>
-        <a href="../../pages/contact.html">Contacto</a>
+        <a href="./index.html">Home</a>
+        <a href="../about.html">Quiénes somos</a>
+        <a href="../courses/index.html">Cursos</a>
+        <a href="../blogs/index.html">Blogs</a>
+        <a href="../register.html">Registro</a>
+        <a href="../login.html">Login</a>
+        <a href="../contact.html">Contacto</a>
       </ul>
     </nav>
+
+    <div class="consult-button">
+      <a class="btn btn-primary" href="https://www.conquerblocks.com/agenda/fullstack/latam?utm_idcampaign=23168336310&utm_adsetid=188272568638&utm_adid=780554350454&gad_campaignid=23168336310" target="_blank" rel="noopener noreferrer">Consulta</a>
+    </div>
   </header>
   
   <main>
 
     <!-- HERO -->
-    <section>
+    <section class="hero-section-blogs">
       <h1>Nuestro Blog</h1>
-      <p>Encontrarás todas las noticias redactadas por nuestros mejores profesionales dentro de la academía</p>
+      <p>Encontrarás todas las noticias redactadas por nuestros mejores profesionales dentro de la academía. Mantente informado con contenido actualizado, análisis y perspectivas sobre el mundo del desarrollo y la innovación.</p>
     </section>
     <hr>
 
+    <section class="grid-cards">
     <!-- PRIMERA NOTICIA -->
       <article>
         <picture>
@@ -66,7 +77,6 @@
         </div>
       </article>
       <hr>
-
       <!-- TERCERA NOTICIA -->
       <article>
         <picture>
@@ -93,12 +103,63 @@
           <p>Todo lo que hacemos en el mundo digital, desde enviar un mensaje de texto hasta ver un video</p>
         </div>
       </article>
-      <hr>
+    </section>
   </main>
 
-  <footer>
-    <p>Copyright © 2025  By ConquerX </p>
-    <a href="#">Aviso legal</a>
+  <footer class="footer-page">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="../../../icons/logotipo-conquerbloks.svg" alt="Logo de conquerblocks">
+          </div>
+
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+
+          <div class="copyright">
+            Copyright © 2025 <a href="#">By ConquerX</a>
+          </div>
+        </div>
+
+        <!-- Cursos Column -->
+        <div class="footer-column">
+          <h3>Cursos</h3>
+          <ul>
+            <li><a href="#">Desarrollo Web Frontend</a></li>
+            <li><a href="#">Backend con Node.js</a></li>
+            <li><a href="#">React Avanzado</a></li>
+          </ul>
+        </div>
+
+        <!-- Blog Column -->
+        <div class="footer-column">
+          <h3>Blog</h3>
+          <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Desarrollo web Full Stack</a></li>
+          <li><a href="#">Inteligencia artificial</a></li>
+          <li><a href="#">Desarrollo Blockchain</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Column -->
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Política de cookies</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
