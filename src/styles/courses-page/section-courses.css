@@ -1,0 +1,58 @@
+/* === SECTION COURSES === */
+.hero-presentation-courses {
+  padding: 120px 20px 80px;
+  text-align: center;
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:50%;
+    aspect-ratio: 2/1;
+    background: radial-gradient(circle, rgba(78, 225, 160, 0.08) 0%, transparent 70%);
+    /* background-color: red; */
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  & h1 {
+    font: var(--font-xl);
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 120px;
+      height: 4px;
+      border-radius: 99px;
+      background: var(--color-primary);
+      margin: 5px auto 0;
+    }
+  }
+
+  & p {
+    line-height: 1.8;
+    color: var(--color-gray-500);
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+}
+.content-courses {
+  width: 100%;
+  padding: 1.5rem;
+  max-width: 1110px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
