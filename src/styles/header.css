@@ -1,51 +1,221 @@
-/* === HEADER === */
+/* HEADER */
 .header-principal-page {
-  background-color: transparent;
-  color: white;
+  background: transparent;
 
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 20;
+  z-index: 500;
 
   width: 100%;
-  max-width: 1110px;
+  max-width: 1200px;
   margin: 0 auto;
 
-  padding: 2rem;
-
+  padding: 2rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 300ms ease;
 
   animation: header-scroll 300ms linear both;
   animation-timeline:scroll(root) ;
   animation-range: 0 200px;
+}
 
-  & > button:first-child {
-    background-color: transparent;
+.header-principal-page.active{
+  background-color: var(--color-bg-nav-tranparent);
+  /* backdrop-filter: blur(10px); */
+}
+
+/* LOGO */
+.header-logo {
+  display: block;
+  max-width: 150px;
+  height: auto;
+  margin: 0;
+  
+  & img {
+    display: block;
     width: 100%;
-    max-width: 32px;
+    height: auto;
+    object-fit: contain;
+  }
+}
 
-      & svg {
-        width: 100%;
-        transform: scaleX(-1);
-        stroke: white;
-      }
+/* NAV */
+.header-principal-page nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  & ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
   }
 
-  & > nav {
+  & .mobile-consult {
+    display: none;
+  }
+
+    /* links */
+  & a.link-nav {
+    color: var(--color-gray-200);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0.5rem;
+    padding-bottom: .8rem;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: .5rem;
+      left: 50%;
+      transform: translateX(-50%) scaleX(0);
+      width: 60%;
+      height: 2px;
+      background: var(--color-primary);
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+      /* background: rgba(127, 214, 175, 0.1); */
+
+      &::after {
+        transform: translateX(-50%) scaleX(1);
+      }
+    }
+  }
+
+}
+.consult-button {
+  display: block;
+}
+
+/* MOBILE MENU BUTTON */
+.btn-open-menu {
+  display: none;
+  background: transparent;
+  border-radius: 8px;
+  padding: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  & svg {
+    width: 28px;
+    height: 28px;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  &:hover {
+    transform: rotate(90deg);
+    
+    & svg {
+      color: var(--color-primary);
+    }
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 968px) {
+
+  .btn-open-menu {
+    display: block;
+  }
+
+  .header-principal-page nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: var(--color-bg-nav-tranparent);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    padding-top: 5rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+
+    &.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    & ul {
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+
+      & .mobile-consult {
+        display: block;
+        background: var(--color-primary);
+        color: var(--color-bg);
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        margin-top: 10px;
+
+        &:hover {
+          color: var(--color-bg);
+        }
+      }
+
+      & a:last-child {
+        margin-top: 4rem;
+        width: 100%;
+      }
+
+      &::after {
+        content: '';
+        display: block;
+        padding: 20px;
+      }
+    }
+
+    & a.link-nav {
+      width: 100%;
+      border-radius: 999px;
+      padding: .8rem 1.5rem;
+      font-weight: 500;
+      display: block;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+      &:hover {
+        transform: translateX(5px);
+        background: rgba(117, 222, 175, 0.2);
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .consult-button {
     display: none;
   }
 }
+
 
 /* === ANIMATIONS === */
 @keyframes header-scroll {
   100% {
     background-color: #24242480;
     backdrop-filter: blur(10px);
-    transform: scale(.9);
+    transform: scale(.95);
     border-radius: 999px;
     border: 1px solid rgba(78, 225, 160, 0.2);
     padding:1rem;

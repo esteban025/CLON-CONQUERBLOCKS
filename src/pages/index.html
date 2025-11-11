@@ -14,27 +14,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/principal-page/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  <script src="../js/open-header.js" defer></script>
 </head>
 <body>
   <header class="header-principal-page">
-    <button class="btn-open-menu">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-list-tree"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6h11" /><path d="M12 12h8" /><path d="M15 18h5" /><path d="M5 6v.01" /><path d="M8 12v.01" /><path d="M11 18v.01" /></svg>
+    <a href="./index.html" class="header-logo">
+      <img src="../../icons/logotipo-conquerbloks.svg" alt="Logo page">
+    </a>
+    
+    <button class="btn-open-menu" aria-label="Abrir menú">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M9 6h11" />
+          <path d="M12 12h8" />
+          <path d="M15 18h5" />
+          <path d="M5 6v.01" />
+          <path d="M8 12v.01" />
+          <path d="M11 18v.01" />
+      </svg>
     </button>
+
     <nav>
-      <ul>
-        <a href="#">Home</a>
-        <a href="./about.html">Quiénes somos</a>
-        <a href="./courses/index.html">Cursos</a>
-        <a href="./blogs/index.html">Blogs</a>
-        <a href="./register.html">Registro</a>
-        <a href="./login.html">Login</a>
-        <a href="./contact.html">Contacto</a>
-      </ul>
+        <ul>
+            <a class="link-nav" href="./index.html">Home</a>
+            <a class="link-nav" href="./about.html">Quiénes somos</a>
+            <a class="link-nav" href="./courses/index.html">Cursos</a>
+            <a class="link-nav" href="./blogs/index.html">Blogs</a>
+            <a class="link-nav" href="./register.html">Registro</a>
+            <a class="link-nav" href="./login.html">Login</a>
+            <a class="link-nav" href="./contact.html">Contacto</a>
+            <a href="https://www.conquerblocks.com/agenda/fullstack/latam" class="btn btn-primary mobile-consult" target="_blank" rel="noopener noreferrer">Consulta</a>
+        </ul>
     </nav>
 
     <div class="consult-button">
-      <a class="btn btn-primary" href="https://www.conquerblocks.com/agenda/fullstack/latam?utm_idcampaign=23168336310&utm_adsetid=188272568638&utm_adid=780554350454&gad_campaignid=23168336310" target="_blank" rel="noopener noreferrer">Consulta</a>
+      <a class="btn btn-primary" href="https://www.conquerblocks.com/agenda/fullstack/latam" target="_blank" rel="noopener noreferrer">Consulta</a>
     </div>
   </header>
   

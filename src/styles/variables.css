@@ -8,6 +8,7 @@
   --color-gray-border: #333;
   --color-gray-200: #e5e5e5;
   --color-bg-card: #242424;
+  --color-bg-nav-tranparent: #1a1a1aea;
   --color-bg-card-before: linear-gradient(135deg, rgba(78, 225, 160, 0.1), transparent);
   
   --color-gradient-primary: linear-gradient(to bottom right, var(--color-green), var(--color-blue));
