@@ -15,26 +15,41 @@
   <link rel="stylesheet" href="../../styles/principal-page/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../../styles/blogs-page/index.css">
+  <script src="../../js/open-header.js" defer></script>
 </head>
 <body>
   <header class="header-principal-page">
-    <button class="btn-open-menu">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-list-tree"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6h11" /><path d="M12 12h8" /><path d="M15 18h5" /><path d="M5 6v.01" /><path d="M8 12v.01" /><path d="M11 18v.01" /></svg>
+    <a href="../index.html" class="header-logo">
+      <img src="../../../icons/logotipo-conquerbloks.svg" alt="Logo page" loading="lazy">
+    </a>
+    
+    <button class="btn-open-menu" aria-label="Abrir menú">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M9 6h11" />
+          <path d="M12 12h8" />
+          <path d="M15 18h5" />
+          <path d="M5 6v.01" />
+          <path d="M8 12v.01" />
+          <path d="M11 18v.01" />
+      </svg>
     </button>
+
     <nav>
-      <ul>
-        <a href="./index.html">Home</a>
-        <a href="../about.html">Quiénes somos</a>
-        <a href="../courses/index.html">Cursos</a>
-        <a href="../blogs/index.html">Blogs</a>
-        <a href="../register.html">Registro</a>
-        <a href="../login.html">Login</a>
-        <a href="../contact.html">Contacto</a>
-      </ul>
+        <ul>
+            <a class="link-nav" href="../index.html">Home</a>
+            <a class="link-nav" href="../about.html">Quiénes somos</a>
+            <a class="link-nav" href="../courses/index.html">Cursos</a>
+            <a class="link-nav" href="#">Blogs</a>
+            <a class="link-nav" href="../register.html">Registro</a>
+            <a class="link-nav" href="../login.html">Login</a>
+            <a class="link-nav" href="../contact.html">Contacto</a>
+            <a href="https://www.conquerblocks.com/agenda/fullstack/latam" class="btn btn-primary mobile-consult" target="_blank" rel="noopener noreferrer">Consulta</a>
+        </ul>
     </nav>
 
     <div class="consult-button">
-      <a class="btn btn-primary" href="https://www.conquerblocks.com/agenda/fullstack/latam?utm_idcampaign=23168336310&utm_adsetid=188272568638&utm_adid=780554350454&gad_campaignid=23168336310" target="_blank" rel="noopener noreferrer">Consulta</a>
+      <a class="btn btn-primary" href="https://www.conquerblocks.com/agenda/fullstack/latam" target="_blank" rel="noopener noreferrer">Consulta</a>
     </div>
   </header>
   
@@ -53,7 +68,7 @@
         <picture>
           <source srcset="../../../images/blogs/diagrama-flujo.webp" type="image/webp">
           <source srcset="../../../images/blogs/diagrama-flujo.jpg" type="image/jpg">
-          <img src="../../../images/blogs/diagrama-flujo.webp" alt="Poster de blog de diagramas de flujo">
+          <img src="../../../images/blogs/diagrama-flujo.webp" alt="Poster de blog de diagramas de flujo" loading="lazy">
         </picture>
         <div class="info">
           <h3>¿Qué es un Diagrama de Flujo y Por Qué es tan Útil?</h3>
@@ -68,7 +83,7 @@
         <picture>
           <source srcset="../../../images/blogs/importancia-algoritmo.webp" type="image/webp">
           <source srcset="../../../images/blogs/importancia-algoritmo.jpg" type="image/jpg">
-          <img src="../../../images/blogs/importancia-algoritmo.webp" alt="Poster de blog de importancia del algoritmo">
+          <img src="../../../images/blogs/importancia-algoritmo.webp" alt="Poster de blog de importancia del algoritmo" loading="lazy">
         </picture>
         <div class="info">
           <h3>¿Qué es un Algoritmo y Por Qué es tan Importante?</h3>
@@ -81,8 +96,8 @@
       <article>
         <picture>
           <source srcset="../../../images/blogs/lenguaje-natural.webp" type="image/webp">
-          <source srcset="../../../images/blog/lenguaje-natural.jpg" type="image/jpg">
-          <img src="../../../images/blogs/lenguaje-natural.webp" alt="Poster de blog de lenguaje natural y programación">
+          <source srcset="../../../images/blogs/lenguaje-natural.jpg" type="image/jpg">
+          <img src="../../../images/blogs/lenguaje-natural.webp" alt="Poster de blog de lenguaje natural y programación" loading="lazy">
         </picture>
         <div class="info">
           <h3>Lenguaje Natural y Programación: ¿Cómo lo Entienden las Máquinas?</h3>
@@ -96,7 +111,7 @@
         <picture>
           <source srcset="../../../images/blogs/bits-bytes.webp" type="image/webp">
           <source srcset="../../../images/blogs/bits-bytes.jpg" type="image/jpg">
-          <img src="../../../images/blogs/bits-bytes.webp" alt="Poster de blog de bits-bytes y su significado">
+          <img src="../../../images/blogs/bits-bytes.webp" alt="Poster de blog de bits-bytes y su significado" loading="lazy">
         </picture>
         <div class="info">
           <h3>Bits y Bytes: La Base del Mundo Digital</h3>
@@ -112,7 +127,7 @@
         <!-- Brand Section -->
         <div class="footer-brand">
           <div class="logo">
-            <img src="../../../icons/logotipo-conquerbloks.svg" alt="Logo de conquerblocks">
+            <img src="../../../icons/logotipo-conquerbloks.svg" alt="Logo de conquerblocks" loading="lazy">
           </div>
 
           <div class="social-links">

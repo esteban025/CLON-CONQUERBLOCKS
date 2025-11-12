@@ -7,29 +7,49 @@
   <title>Proyectos HTMl - Cursos de conquerblocks | EstebanDev</title>
   <meta name="description" content="Todos lo cursos que ofrece la academía conquerblocks">
 
-  <!-- font -->
-
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/principal-page/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../../styles/courses-page/index.css">
+  <script src="../../js/open-header.js" defer></script>
 </head>
 <body>
   <header class="header-principal-page">
-    <button class="btn-open-menu">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-list-tree"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6h11" /><path d="M12 12h8" /><path d="M15 18h5" /><path d="M5 6v.01" /><path d="M8 12v.01" /><path d="M11 18v.01" /></svg>
+    <a href="../index.html" class="header-logo">
+      <img src="../../../icons/logotipo-conquerbloks.svg" alt="Logo page" loading="lazy">
+    </a>
+    
+    <button class="btn-open-menu" aria-label="Abrir menú">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M9 6h11" />
+          <path d="M12 12h8" />
+          <path d="M15 18h5" />
+          <path d="M5 6v.01" />
+          <path d="M8 12v.01" />
+          <path d="M11 18v.01" />
+      </svg>
     </button>
+
     <nav>
-      <ul>
-        <a href="./index.html">Home</a>
-        <a href="#">Quiénes somos</a>
-        <a href="./courses/index.html">Cursos</a>
-        <a href="./blogs/index.html">Blogs</a>
-        <a href="./register.html">Registro</a>
-        <a href="./login.html">Login</a>
-        <a href="./contact.html">Contacto</a>
-      </ul>
+        <ul>
+            <a class="link-nav" href="../index.html">Home</a>
+            <a class="link-nav" href="../about.html">Quiénes somos</a>
+            <a class="link-nav" href="#">Cursos</a>
+            <a class="link-nav" href="../blogs/index.html">Blogs</a>
+            <a class="link-nav" href="../register.html">Registro</a>
+            <a class="link-nav" href="../login.html">Login</a>
+            <a class="link-nav" href="../contact.html">Contacto</a>
+            <a href="https://www.conquerblocks.com/agenda/fullstack/latam" class="btn btn-primary mobile-consult" target="_blank" rel="noopener noreferrer">Consulta</a>
+        </ul>
     </nav>
 
     <div class="consult-button">
-      <a class="btn btn-primary" href="https://www.conquerblocks.com/agenda/fullstack/latam?utm_idcampaign=23168336310&utm_adsetid=188272568638&utm_adid=780554350454&gad_campaignid=23168336310" target="_blank" rel="noopener noreferrer">Consulta</a>
+      <a class="btn btn-primary" href="https://www.conquerblocks.com/agenda/fullstack/latam" target="_blank" rel="noopener noreferrer">Consulta</a>
     </div>
   </header>
   
@@ -46,7 +66,7 @@ En Conquer Blocks, encontrarás un Máster diseñado especialmente para impulsar
     <section class="content-courses">
         <!-- CURSO DESARROLLADOR FULLSTACK -->
         <article class="course-card">
-          <img src="../../../images/courses/master-fullstack.webp" alt="Desarrollo fullstack" class="card-image">
+          <img src="../../../images/courses/master-fullstack.webp" alt="Desarrollo fullstack" class="card-image" loading="lazy">
           <div class="card-content">
               <span class="card-category">Frontend</span>
               <h3 class="card-title">Máster en Desarrollo Web Full-Stack</h3>
@@ -63,7 +83,7 @@ En Conquer Blocks, encontrarás un Máster diseñado especialmente para impulsar
 
         <!-- CURSO DESARROLLADOR BLOCKCHAIN -->
         <article class="course-card">
-          <img src="../../../images/courses/master-blockchain.webp" alt="Blockchain" class="card-image">
+          <img src="../../../images/courses/master-blockchain.webp" alt="Blockchain" class="card-image" loading="lazy">
           <div class="card-content">
               <span class="card-category">Blockchain</span>
               <h3 class="card-title">Máster en Desarrollo Blockchain</h3>
@@ -80,7 +100,7 @@ En Conquer Blocks, encontrarás un Máster diseñado especialmente para impulsar
 
         <!-- CURSO IA -->
         <article class="course-card">
-          <img src="../../../images/courses/master-AI.webp" alt="image AI" class="card-image">
+          <img src="../../../images/courses/master-AI.webp" alt="image AI" class="card-image" loading="lazy">
           <div class="card-content">
               <span class="card-category">Inteligencia Artificial</span>
               <h3 class="card-title">El Máster en Inteligencia Artificial</h3>
@@ -95,7 +115,7 @@ En Conquer Blocks, encontrarás un Máster diseñado especialmente para impulsar
         </article>
         <!-- CURSO CIBERSEGURIDAD -->
         <article class="course-card">
-          <img src="../../../images/courses/master-ciberseguridad.webp" alt="image Ciberseguridad" class="card-image">
+          <img src="../../../images/courses/master-ciberseguridad.webp" alt="image Ciberseguridad" class="card-image" loading="lazy">
           <div class="card-content">
               <span class="card-category">Ciberseguridad</span>
               <h3 class="card-title">Máster en Ciberseguridad</h3>
@@ -117,7 +137,7 @@ En Conquer Blocks, encontrarás un Máster diseñado especialmente para impulsar
         <!-- Brand Section -->
         <div class="footer-brand">
           <div class="logo">
-            <img src="../../../icons/logotipo-conquerbloks.svg" alt="Logo de conquerblocks">
+            <img src="../../../icons/logotipo-conquerbloks.svg" alt="Logo de conquerblocks" loading="lazy">
           </div>
 
           <div class="social-links">
