@@ -22,7 +22,7 @@
 /* primary */
 .btn-primary {
   background: var(--color-primary);
-  color: #1a1a1a;
+  color: var(--color-bg);
   border: 2px solid var(--color-primary);
   box-shadow: 0 4px 15px rgba(78, 225, 160, 0.3);
 
@@ -42,7 +42,7 @@
 
   &:hover {
     background: var(--color-primary);
-    color: #1a1a1a;
+    color: var(--color-bg);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(78, 225, 160, 0.3);
   }

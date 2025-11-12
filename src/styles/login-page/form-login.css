@@ -12,7 +12,6 @@ main {
 .login-section {
   width: 100%;
   max-width: 600px;
-  background: #1a1a1a;
   border-radius: 20px;
   padding: 50px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
@@ -86,7 +85,7 @@ main {
 
   & input {
     width: 100%;
-    background: #242424;
+    background: var(--color-bg-card);
     border: 2px solid rgba(78, 225, 160, 0.2);
     border-radius: 10px;
     padding: 14px 18px;

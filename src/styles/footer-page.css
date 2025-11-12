@@ -1,8 +1,8 @@
 /* FOOTER */
 
 footer.footer-page {
-  background: #242424;
-  color: #fff;
+  background: var(--color-bg-card);
+  color: white;
   padding: 60px 20px 30px;
 }
 
@@ -36,7 +36,7 @@ footer.footer-page {
 .logo-text {
   font-size: 14px;
   font-weight: 600;
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 5px;
@@ -54,25 +54,24 @@ footer.footer-page {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: #333; */
   border-radius: 8px;
-  color: #fff;
+  color: white;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-  background: #4EE1A0;
+  background: var(--color-primary);
   transform: translateY(-3px);
 }
 
 .copyright {
   font-size: 14px;
-  color: #999;
+  color: var(--color-gray-500);
 }
 
 .copyright a {
-  color: #4EE1A0;
+  color: var(--color-primary);
   text-decoration: none;
   font-weight: 600;
 }
@@ -80,7 +79,7 @@ footer.footer-page {
 .footer-column h3 {
   font-size: 16px;
   font-weight: 700;
-  color: #4EE1A0;
+  color: var(--color-primary);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 20px;
@@ -103,7 +102,7 @@ footer.footer-page {
 }
 
 .footer-column ul li a:hover {
-  color: #4EE1A0;
+  color: var(--color-primary);
   transform: translateX(5px);
 }
 

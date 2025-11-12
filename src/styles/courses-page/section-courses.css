@@ -2,7 +2,7 @@
 .hero-presentation-courses {
   padding: 120px 20px 80px;
   text-align: center;
-  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+  background: linear-gradient(180deg, #0a0a0a 0%,var(--color-bg) 100%);
   position: relative;
   overflow: hidden;
 

@@ -1,6 +1,6 @@
 /* === SECTION WHO WE ARE === */
 .about-section {
-  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+  background: linear-gradient(180deg, #0a0a0a 0%, var(--color-bg) 100%);
   color: white;
 
   padding: 4rem 1.5rem;
