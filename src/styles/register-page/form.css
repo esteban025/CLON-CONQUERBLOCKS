@@ -1,0 +1,135 @@
+
+
+/* SECTION */
+.register-section {
+  width: 100%;
+  max-width: 700px;
+  margin: 6rem auto;
+  padding: 1rem;
+  position: relative;
+}
+
+
+/* FORM */
+.register-form {
+  border: 1px solid rgba(78, 225, 160, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+  padding: 1.5rem;
+}
+
+/* FIELDSET */
+.form-fieldset {
+  border: none;
+
+  & .grid-form { 
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.form-fieldset legend {
+  font: var(--font-xl);
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.form-fieldset legend::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: 4px;
+    border-radius: 99px;
+    background: var(--color-primary);
+}
+
+
+/* LABELS */
+.form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    /* color: #ccc; */
+    color: var(--color-gray-200);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* INPUTS */
+.form-input,
+.form-textarea {
+    width: 100%;
+    background: var(--color-bg-card);
+    border: 2px solid rgba(78, 225, 160, 0.2);
+    border-radius: 10px;
+    padding: .5rem .75rem;
+    font-size: 16px;
+    color: white;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: var(--color-gray-400);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: var(--color-primary);
+    background: #2a2a2a;
+    box-shadow: 0 0 0 4px rgba(78, 225, 160, 0.1);
+}
+
+.form-input:hover,
+.form-textarea:hover {
+    border-color: rgba(78, 225, 160, 0.4);
+}
+
+/* TEXTAREA */
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* FILE INPUT */
+.form-input[type="file"] {
+    padding: 12px 18px;
+    cursor: pointer;
+}
+
+.form-input[type="file"]::file-selector-button {
+    background: rgba(78, 225, 160, 0.15);
+    color: var(--color-primary);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-right: 12px;
+    transition: all 0.3s ease;
+}
+
+.form-input[type="file"]::file-selector-button:hover {
+    background: rgba(78, 225, 160, 0.25);
+}
+
+.form-button {
+  width: 100%;
+}
+
+@media (width >= 620px) {
+  .grid-form .form-group:last-child {
+    grid-column: span 2;
+
+  }
+}

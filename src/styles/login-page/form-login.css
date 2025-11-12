@@ -1,0 +1,118 @@
+main {
+  width: 100%;
+  min-height: 110vh;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LOGIN SECTION */
+.login-section {
+  width: 100%;
+  max-width: 600px;
+  background: #1a1a1a;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(78, 225, 160, 0.1);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(78, 225, 160, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+}
+
+/* FORM */
+.login-form {
+  position: relative;
+  z-index: 1;
+
+  & fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 30px;
+
+    & legend {
+      font: var(--font-xl);
+      line-height: 1;
+      color: white;
+      margin-bottom: 30px;
+      position: relative;
+      padding-bottom: 15px;
+      text-align: center;
+      width: 100%;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 4px;
+        border-radius: 99px;
+        background: var(--color-primary);
+      }
+    }
+  }
+}
+
+/* INPUTS CONTAINER */
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  & label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ccc;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  & input {
+    width: 100%;
+    background: #242424;
+    border: 2px solid rgba(78, 225, 160, 0.2);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 16px;
+    color: #fff;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    outline: none;
+
+    &::placeholder {
+      color: var(--color-gray-400);
+    }
+
+    &:focus {
+      border-color: var(--color-primary);
+      background: #2a2a2a;
+      box-shadow: 0 0 0 4px rgba(78, 225, 160, 0.1);
+    }
+
+    &:hover {
+      border-color: rgba(78, 225, 160, 0.4);
+    }
+  }
+}
+
+/* btn */
+.form-button {
+  width: 100%;
+}

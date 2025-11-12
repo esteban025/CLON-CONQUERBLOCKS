@@ -2,16 +2,23 @@
 
 /* general */
 .btn {
-  padding: 14px 32px;
+  padding: 10px 28px;
   border-radius: 999px;
   transition: all 200ms ease;
   display: inline-block;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   cursor: pointer;
-
+  text-align: center;
 }
+
+/* mas padding en algunas secciones */
+.btn-more-pbl {
+  padding-block: 16px;
+}
+
 /* primary */
 .btn-primary {
   background: var(--color-primary);

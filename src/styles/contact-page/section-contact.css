@@ -1,0 +1,183 @@
+/* HERO SECTION */
+.contact-hero {
+  text-align: center;
+
+  width: 100%;
+  height: 500px;
+
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -60%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(78, 225, 160, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  & h2 {
+    font: var(--font-xl);    
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 120px;
+      height: 4px;
+      background: var(--color-primary);
+      border-radius: 99px;
+      margin: 0 auto;
+      /* margin: 20px auto 0; */
+    }
+  }
+
+  & p {
+    font-size: 18px;
+    color: var(--color-gray-200);
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    line-height: 1.6;
+  }
+}
+
+/* CONTENT GRID */
+.contact-content {
+  max-width: 1110px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  gap: 60px;
+  align-items: start;
+
+  & h3 {
+    font: var(--font-md);
+    color: var(--color-primary);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+/* ADDRESS SECTION */
+.contact-info {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(78, 225, 160, 0.1);
+
+  & address {
+    font-style: normal;
+    line-height: 2;
+    color: var(--color-gray-200);
+    margin-bottom: 30px;
+
+    & strong {
+      color: white;
+      font-size: 20px;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    & a {
+      color: var(--color-primary);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      position: relative;
+
+      &:hover {
+        /* no es color-primary */
+        color: #2ab478;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+/* INFO CARDS */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 1rem;
+  margin-top: 30px;
+
+  & .info-card {
+    background: var(--color-bg-card);
+    padding: 1rem;
+    border-radius: 12px;
+    border-left: 3px solid var(--color-primary);
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #2a2a2a;
+      transform: translateX(5px);
+    }
+
+    & .card-icon {
+      font-size: 32px;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    & .card-title {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--color-primary);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    & .card-text {
+      font-size: 14px;
+      color: var(--color-gray-500);
+      line-height: 1.6;
+    }
+  }
+}
+
+/* MAP SECTION */
+.map-container {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(78, 225, 160, 0.1);
+
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+
+  & iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: .75rem;
+    filter: grayscale(20%) brightness(0.85);
+    transition: all 0.3s ease;
+
+    &:hover {
+      filter: grayscale(0%) brightness(1);
+    }
+  }
+}
+
+@media (width >= 970px) {
+  .info-cards {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+
+  }
+}
